@@ -1,0 +1,27 @@
+@import "../../../assets/scss/_var.scss";
+@import "../../../assets/scss/_mixins.scss";
+
+.btn-primary.cm_btn {
+  position: relative;
+  background: $GradientBtn;
+  border-radius: 60px;
+  height: 44px;
+  padding: 0 28px;
+  line-height: 42px;
+  font-size: 14px;
+  border: none;
+  font-family: $Basefont;
+  white-space: nowrap;
+}
+
+.border_btn {
+  border: 1px solid $white;
+  border-radius: 22px;
+  color: $white;
+  font-size: 14px;
+  white-space: nowrap;
+  height: 44px;
+  padding: 0 28px;
+  line-height: 42px;
+  display: inline-block;
+}

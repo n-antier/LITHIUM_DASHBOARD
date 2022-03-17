@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import "./assets/scss/_var.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Poppins", sans-serif,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  margin: 0;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+}
+p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+}
+.container {
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.padd_row {
+  padding: 85px 0;
+}
+
+.heading_style {
+  margin: 0px auto 60px;
+  text-align: center;
+  position: relative;
+  h2 {
+    color: $titleColor;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    &:after {
+      position: absolute;
+      width: 55%;
+      content: "";
+      height: 2px;
+      background: #000;
+      border-radius: 2px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 0px;
+    }
+  }
+  span.behind_title {
+    position: absolute;
+    font-size: 50px;
+    color: $titleColor;
+    opacity: 0.05;
+    white-space: nowrap;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 600;
+    top: -32px;
+  }
+  p {
+    color: $textLightColor;
+    max-width: 1000px;
+    margin: auto;
+  }
+  &.hd_white {
+    h2 {
+      color: $white;
+      &:after {
+        background-color: $white;
+      }
+    }
+    span.behind_title {
+      color: $white;
+      opacity: 0.1;
+    }
+  }
+}
+.heading_title {
+  h2 {
+    font-size: 25px;
+    line-height: 33px;
+    letter-spacing: -0.5px;
+    margin-bottom: 30px;
+  }
+}

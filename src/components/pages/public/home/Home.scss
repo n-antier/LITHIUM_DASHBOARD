@@ -1,0 +1,39 @@
+@import "../../../../assets/scss/_var.scss";
+
+.banner_sec {
+  background-image: url("../../../../assets/images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 170px 0 120px;
+  .banner_content {
+    h1 {
+      font-size: 46px;
+      font-weight: 600;
+      line-height: 60px;
+      letter-spacing: 0.5px;
+      color: $white;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 20px;
+      opacity: 0.8;
+      line-height: 34px;
+      letter-spacing: 0.5px;
+      color: $white;
+      margin-bottom: 40px;
+    }
+  }
+  .banner-img {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.about_us {
+  background: $LightBg;
+  .about_box {
+    text-align: center;
+  }
+}
